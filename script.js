@@ -238,6 +238,10 @@ function getDescriptionData(){
       // code block
   }
 
+  if(cookieDictionary.town == "Shuzenji"){
+    return ("Something went wrong!");
+  }
+
   return ("Thanks for sharing where you are. It appears to be " + cond + dayNight + "in " + cookieDictionary.town + " with a temperature of " + temp + " degrees.");
 }
 
