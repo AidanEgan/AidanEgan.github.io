@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Aidan Egan's Webpage</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="zephyr.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Make Header. -->
+  <!-- Dark Theme.
+  <nav id="Navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+    <!-- Light Theme. -->
+    <nav id="Navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aidan Egan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About Me
+              <span class="visually-hidden">(current)</span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Make Body, includes welcome section and info box. -->
+  <div id="BodyDiv">
+
+    <div id="CardOne" class="card bg-light mb-3" style="width:79%;min-height:150px;">
+      <div class="card-header"><b>Education:</b></div>
+      <div class="card-body">
+          I am currently pursuing a BS in Computer Science at Villanova University, with a
+          minor in Engineering and Entrepreneurship. At Villanova I have been able to foster
+          my skills as a programmer, broadening my algorithmic thinking skills through the programming
+          team and collaborating with others on group projects. Furthmore, I have had opportunities to
+          develop my communication and critical thinking skills, applying them in both work and classroom settings.
+      </div>
+    </div>
+
+    <div id="CardOne" class="card bg-light mb-3" style="width:79%;min-height:150px;">
+      <div class="card-header"><b>Work Experience:</b></div>
+      <div class="card-body">
+          This past summer, I participated in a cybersecurity REU through Oakland University. Here, I assisted a research
+          team by investigating the security of a machine-learning based programming infrastructure they seek to develop.
+          Through this experience, I not only mangaged to participate in research on the forefront of cybersecurity as a field,
+          but I also learned a great deal about compiler/language design, common machine learning algorithms, and the use
+          of cloud services such as Amazon's AWS.
+          <br /><br />
+          At Villanova, I also work as a teaching assistant for the Analysis of Algorithms course, and work for the
+          University IT department as a technician. In these positions, I have ample opportunity to work on my interpersonal skills
+          and develop my technical understanding of everything from algorithm design to computer hardware.
+      </div>
+    </div>
+
+    <div id="CardOne" class="card bg-light mb-3" style="width:79%;min-height:150px;">
+      <div class="card-header"><b>Interests & Projects:</b></div>
+      <div class="card-body">
+          I am passionate about numerous aspects of computer science including mobile/web development, machine learning, and
+          cybersecurity. I find that all of these fields are developing in interesting ways, and often the intersections of these
+          fields provide opportunity for exciting developments and insights. I am primarily interested in Python and JavaScript
+          projects, but I have experience with other langauges as well such as Java and C.
+          <br/><br/>
+          Currently, I am working on a project in Python that aims to transform an image using English-based instructions
+          given by a user. This project provides me opportunities to investigate artificial intelligence techniques such as natural
+          language processing to create this useful tool. Aside from this, I have also worked on other projects involving different
+          fields of software engineering. This includes a file upload server written in Python and Flask, a Chrome Extension that
+          searches for all links on a current page, and an Android application used to track one's progress at the gym.
+          <br/><br/>
+          This website was primarily written with standard html/css/javascript, but incorporates a few tools and technologies. It makes
+          use of bootstrap along with a theme called <a href="https://bootswatch.com/zephyr"><u>zephyr</u></a>, this
+          <a href="https://fcc-weather-api.glitch.me"><u>weather api</u></a>, and the button was created as a react element.
+      </div>
+    </div>
+
+    <div id="CardTwo" class="card bg-light mb-3" style="width:19%;min-height:300px;">
+      <div class="card-header"><b>Relevant Links:</b></div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-light">
+            <a href="https://www.linkedin.com/in/aidan-egan-5688461a1/"><p class="card-text"> LinkedIn </p></a>
+          </li>
+          <hr style="width:0px;">
+          <li class="list-group-item border-light">
+            <a href="https://github.com/AidanEgan"><p class="card-text"> GitHub </p></a>
+          </li>
+          <hr style="width:0px;">
+          <li class="list-group-item border-light">
+            <a href="mailto:aidanegan19@gmail.com"><p class="card-text"> Email </p></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- Make footer with reference to tools used. -->
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

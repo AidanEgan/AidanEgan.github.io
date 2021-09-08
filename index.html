@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Aidan Egan's Webpage</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="zephyr.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Make Header. -->
+  <!-- Dark Theme. -->
+  <nav id="Navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aidan Egan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Make Body, includes welcome section and info box. -->
+  <div id="BodyDiv">
+
+    <div id="CardOne" class="card bg-light mb-3" style="width:69%;">
+      <div class="card-header"><b>Introduction:</b></div>
+      <div class="card-body">
+        <div id="vertBar"></div>
+        <p class="card-text" id="centerText" style="font-size: 125%;">
+          Hello, my name is Aidan Egan. I am a computer science major at Villanova University. My interests
+          include web development, mobile development, machine learning, and cybersecuirty. I enjoy embracing
+          new challenges and discovering creative solutions to all types of problems.
+        </p>
+        <img id="imgContain" src="AidanEgan.png" width="200px" height="266px" alt="AidanEgan"/>
+      </div>
+    </div>
+
+    <div id="CardTwo" class="card bg-light mb-3" style="width:29%">
+      <div class="card-header"><b>Website Style: </b></div>
+      <div class="card-body">
+        <div id="WithButton"> </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
